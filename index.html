@@ -16,6 +16,13 @@ header{
 }
 ul{
     display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+.ul2{
+    display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 30px;
 }
@@ -26,13 +33,34 @@ li{
     /* color: rgb(237, 28, 36); */
 }
 .btn1{
-    height: 35px;
+    height: 45px;
     width: 140px;
     background-color: white;
     color: red;
-    border-radius: 15px;
- 
-   
+    border-radius: 20px;
+    border: white;
+    font-family:  ui-sans-serif, system-ui,
+    "Segoe UI","Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    Font-size: 16px;
+    Font-weight: 600;
+    Line-height: 24px;
+}
+.btn1:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1px solid red
+}
+.fas{
+    border: 3px solid red;
+    border-radius: 360px;
+    width: 17px;
+    height: 16px;
+    padding-top: 3px;
+}
+.fas:hover{
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 section{
     padding-left: 150px;
@@ -43,7 +71,14 @@ section{
     width: 35%;
     height: 350px;
     text-align: center;
-    margin-left: 35%;
+    margin-left: 33%;
+}
+.div1b{
+    /* border: 1px solid; */
+    width: 35%;
+    height: 350px;
+    text-align: center;
+    margin-left: 33%;
 }
 .h1a{
     Font-size: 45.296px;
@@ -52,9 +87,9 @@ section{
 }
 .pa{
     Font-size: 24px;
-Font-weight: 400;
-Line-height: 42px;
-color: rgb(0, 0, 0);
+    Font-weight: 400;
+    Line-height: 42px;
+    color: rgb(0, 0, 0);
 }
 .btn2{
     width: 170px;
@@ -66,6 +101,11 @@ color: rgb(0, 0, 0);
     Font-weight: 600;
     Line-height: 32px;
     color: rgb(255, 255, 255);
+    border: none;
+}
+.btn2:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 .div2{
     /* border: 1px solid; */
@@ -74,8 +114,89 @@ color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
 }
+.div2a{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+}
+.div2b{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 500px;
+}
+.div3{
+      /* border: 1px solid; */
+      width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.div3a{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+}
+.div3b{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 500px;
+}
+.div4{
+      /* border: 1px solid; */
+      width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.div4a{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+}
+.div4b{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 500px;
+}
+.div5{
+      /* border: 1px solid; */
+      width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.div5a{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+}
+.div5b{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 500px;
+}
+.div6{
+      /* border: 1px solid; */
+      width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.div6a{
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 500px;
+}
+.div6b{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 500px;
+}
+.imgbig{
+    height: 450px;
+}
 .h1b{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
     Font-size: 48px;
     Font-weight: 700;
     Line-height: 60px;
@@ -87,20 +208,12 @@ Font-weight: 400;
 Line-height: 24px;
 color: rgb(0, 0, 0);
 }
-.div2a{
-    /* border: 1px solid red; */
-    width: 40%;
-    height: 400px;
-}
 .divsecondlast{
     /* border: 2px solid yellow; */
     height: 450px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-left: 100px;
-    padding-right: 100px;
-   
 }
 .card{
     text-align: center;
@@ -115,11 +228,16 @@ color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
+
 footer{
     text-align: center;
 }
 .ulf{
     display: flex;
+    justify-content: center;
+}
+.mored{
+    display: block;
     justify-content: center;
 }
 .more{
@@ -134,6 +252,7 @@ body{
 }
 li:hover{
     color: red;
+    cursor: pointer;
 }
 .icon2{
     display: none;
@@ -143,7 +262,10 @@ li:hover{
         overflow-x: hidden;
     }
     section{
-        width: 850px;
+        width: 100%;
+       padding-left: 1px;
+       padding-right: 1px;
+       min-height: 5000px;
     }
     header{
         width: 100%;
@@ -157,36 +279,250 @@ li:hover{
         display: block;
     }
     .div1{
-    border: 1px solid;
-    width: 200px;
-    height: 350px;
+    border: none ;
+    width: 100%;
+    display: block;
+    height: 550px;
     text-align: center;
+    margin-left: 0px;
     }
     .div2{
-    /* border: 1px solid; */
+        border: none;
     width: 100%;
-    height: 500px;
+    height: 850px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.div2a{
+    border: none;
+    height: 550px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    display: block;
+    justify-content: center;
+}
+.div2b{
+    border: none;
+    height: 550px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-left: 0px;
+   height: 280px;
+}
+.div3{
+    border: none;
+    width: 100%;
+    height: 700px;
+    display: block;
+    align-items: ;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.div3a{
+    border: none;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.div3b{
+    border: none;
+    height: 400px;
+    width: 100%;
+    margin-left: 0px;
     display: block;
 }
-
+.div4{
+    border: none;
+    width: 100%;
+    height: 900px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.div4a{
+    border: none ;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.div4b{
+    border: none;
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+}
+.div5{
+    border: none;
+    width: 100%;
+    height: 800px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.div5a{
+    border: none;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.div5b{
+    border: none;
+    height: 300px;
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+}
+.div6{
+    border: none;
+    width: 100%;
+    height: 650px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.div6a{
+    border: none;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.div6b{
+    border: none;
+    height: 350px;
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+}
+.imgbig{
+    height: 200px;
+    width: 250px;
+}
+.mored{
+    width: 100%;
+    border: none;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+}
+.divsecondlast{
+    width: 100%;
+    height: 900px;
+    display: block;
+    justify-content: center;
+    border: none;
+}
+.card{
+    height: 500px;
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+.div1b{
+    height: 350px;
+    width: 100%;
+    margin-left: 0px;
+}
+.divlast{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    margin-left: 0px;
+    border: none;
+}
+.icons{
+    border: none;
+    margin-left: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+.ulf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+li{
+    display: block;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin-left: 0px;
+}
+.btn1:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1px solid red
+}
+.fas:hover{
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+.btn2:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.ul2{
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: center;
+}
+.ul2:hover{
+    color: red;
+    cursor: pointer;
+}
 }
     </style>
 </head>
 <body>
     <header>
-        <img src="./media testing/mixlr logo.png" alt="">
+      <img src="./media testing/mixlr logo.png" alt="">
         <nav>
             <ul>
                 <li style="color: red;">Features</li>
                 <li>Listen</li>
                 <li>Pricing</li>
                 <li>Login</li>
-                <li><button class="btn1">Get started</button></li>
+                <li><button class="btn1"><div class="fas"><i class="fa-solid fa-plus"></i></div>Get started</button></li>
             </ul>
             <div class="icon2">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
         </nav>
     </header>
     <section>
@@ -203,51 +539,51 @@ li:hover{
                       and a playlist of sounds. Your audio, done your way.</p>
             </div>
             <div class="div2b">
-                <img src="./media testing/firstimg.png" alt="" height="450px">
+                <img class="imgbig" src="./media testing/firstimg.png" alt="">
             </div>
         </div>
-        <div class="div2">
-                <div class="div2b">
-                    <img src="./media testing/secondimgl.png" alt="" height="450px">
+        <div class="div3">
+                <div class="div3a">
+                    <img class="imgbig" src="./media testing/secondimgl.png" alt="">
                 </div>
-                <div class="div2a">
+                <div class="div3b">
                 <h1 class="h1b">No limits to audience size</h1>
                 <p class="p2">Reach an audience as big as you need. Connect, chat and engage with listeners all over the world with the confidence that everyone will be able to connect to your live stream. 
                     Mixlr has dedicated servers set aside,
                     allowing you to scale your broadcasts as big as you need without extra costs.</p>
             </div>
         </div>
-        <div class="div2">
-            <div class="div2a">
+        <div class="div4">
+            <div class="div4a">
                 <h1 class="h1b"> Your own channel, a custom website for audio</h1>
                 <p class="p2">This is where all your audio is hosted. People can listen live while chatting or play back recordings. The custom players are ad-free, feature audio visuals and an immersive full-screen experience.
                      Brand your channel with a logo, custom background and personalized URL. It's your site for your audio.</p>
             </div>
-            <div class="div2b">
-                <img src="./media testing/thirdimg.png" alt="" height="450px">
+            <div class="div4b">
+                <img class="imgbig" src="./media testing/thirdimg.png" alt="">
             </div>
         </div>
-        <div class="div2">
-            <div class="div2b">
-                <img src="./media testing/fourthimg.png" alt="" height="450px">
+        <div class="div5">
+            <div class="div5a">
+                <img class="imgbig" src="./media testing/fourthimg.png" alt="">
             </div>
-            <div class="div2a">
+            <div class="div5b">
             <h1 class="h1b">Showcase your recordings collection</h1>
             <p class="p2">Record your broadcasts and publish them to your channel when you're ready.
                  Listeners can visit your entire archive of past broadcasts and share direct links to their favorites.</p>
         </div>
     </div>
-    <div class="div2">
-        <div class="div2a">
+    <div class="div6">
+        <div class="div6a">
             <h1 class="h1b"> Custom embeddable player</h1>
             <p class="p2">Make it easier for people to come across your audio.
                  Embed an ad-free player to your other existing sites to promote your audio content. It's as simple as copying and pasting an HTML widget code.</p>
         </div>
-        <div class="div2b">
-            <img src="./media testing/fifthimg.png" alt="" height="450px">
+        <div class="div6b">
+            <img class="imgbig" src="./media testing/fifthimg.png" alt="">
         </div>
     </div>
-                            <h1 class="more">And there's more...</h1>
+             <div class="mored"><h1 class="more">And there's more...</h1></div>
     <div class="divsecondlast">
         <div class="card">
             <img src="./media testing/logo1.png" alt="" height="150px">
@@ -293,7 +629,7 @@ li:hover{
              app or player around your live audio. We encode your livestream URL in mp3 format at a quality of 128kbps.</p>
     </div>
     </div>
-    <div class="div1">
+    <div class="div1b">
         <h1 class="h1a">Become a Mixlr
             audio creator today</h1>
         <button class="btn2">View plans</button>
@@ -310,7 +646,7 @@ li:hover{
     </div>
     <footer>
         <div  class="ulf">
-            <ul>
+            <ul class="ul2">
                 <li>Pricing</li>
                 <li>Blog</li>
                 <li> Support</li>
